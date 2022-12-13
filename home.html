@@ -1,52 +1,88 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=display-width, initial-scale=1.0">
+    <title>Afloja mi niño</title>
+    <!--BOOTSTRAP 4---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Canarias Libre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listas.html">Listas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <br>
-<h4 class="projects-heading">Fotos de las islas</h4>
-<div class="projects-grid">
-    <img class="projects-image" src="/../images/lanzarote.jpg" height="300" width="300"/>
-    <img class="projects-image" src="images/elhierro.jpg" height="300" width="300"/>
-    <img class="projects-image" src="images/lagomera.jpg" height="300" width="300"/>
-    <img class="projects-image" src="images/lagraciosa.jpg" height="300" width="300"/>
-    <img class="projects-image" src="images/lapalma.jpeg" height="300" width="300"/>
-    <img class="projects-image" src="images/fuerteventura.png" height="300" width="300"/>
-    <img class="projects-image" src="images/grancanaria.png" height="300" width="300"/>
-    <img class="projects-image" src="images/tenerife.jpeg" height="300" width="300"/>
-
+<div class="container p-4">
+    <div class="container">
+        <br>
+        <h4 class="projects-heading">Fotos de las islas</h4>
+        <div class="projects-grid">
+            <img class="projects-image" src="/../images/lanzarote.jpg" height="300" width="300"/>
+            <img class="projects-image" src="images/elhierro.jpg" height="300" width="300"/>
+            <img class="projects-image" src="images/lagomera.jpg" height="300" width="300"/>
+            <img class="projects-image" src="images/lagraciosa.jpg" height="300" width="300"/>
+            <img class="projects-image" src="images/lapalma.jpeg" height="300" width="300"/>
+            <img class="projects-image" src="images/fuerteventura.png" height="300" width="300"/>
+            <img class="projects-image" src="images/grancanaria.png" height="300" width="300"/>
+            <img class="projects-image" src="images/tenerife.jpeg" height="300" width="300"/>
+        </div>
+    
+    
+        <div>
+            <h4 id="parrafo4">Enlazar a páginas web</h4>
+            <a href="https://es.wikipedia.org/wiki/Pepe_Benavente">Este es Pepe Benavente (mi Dios)</a> <br>
+            <a href="http://127.0.0.1:5000/about">Este enlace lleva a About (web local)</a>
+        </div>
+        <br>
+        <h4 id="parrafo4">Creamos una tabla</h4>
+        <div class="table">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <br>
+        <div class="jumbotron">
+            <h1 class="display-4">Canarias Libre</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+                featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="home.html" role="button">Learn more</a>
+        </div>
+        <div class="project-image-wrapper">
+            <img class="big-picture" src="https://viajes.nationalgeographic.com.es/medio/2020/02/13/fuerteventura_f9cff96a_1280x720.jpg">
+            <h1> ISLAS CANARIAS</h1>
+        </div>
+    
+    </div>
 </div>
-
-
-    <div>
-        <h4 id="parrafo4">Enlazar a páginas web</h4>
-        <a href="https://es.wikipedia.org/wiki/Pepe_Benavente">Este es Pepe Benavente (mi Dios)</a> <br>
-        <a href="http://127.0.0.1:5000/about">Este enlace lleva a About (web local)</a>
-    </div>
-    <br>
-    <h4 id="parrafo4">Creamos una tabla</h4>
-    <div class="table">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-    </div>
-    <br>
-    <div class="jumbotron">
-        <h1 class="display-4">Canarias Libre</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
-    <div class="project-image-wrapper">
-        <img class="big-picture" src="https://viajes.nationalgeographic.com.es/medio/2020/02/13/fuerteventura_f9cff96a_1280x720.jpg">
-        <h1> ISLAS CANARIAS</h1>
-    </div>
-
-</div>
-{% endblock %}
+</body>
+</html>
