@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Listas</h1>
+<div>
+    <h4 id="parrafo4">Lista de comidas y bebidas ricas</h4>
+    <ol class="listas">
+        <li>Comiditas canarias ricas</li>
+        <ul>
+            <li>Potajito de lentejas</li>
+            <li>Gofio</li>
+            <li>Platanito</li>
+            <li>Chocolatinas tirma</li>
+        </ul>
+        <li>Bebidas canarias ricas</li>
+        <ul>
+            <li>Cliper</li>
+            <li>ron areucas</li>
+        </ul>
+    </ol>
+</div>
+<br>
+<h4 id="parrafo4">Islas y qué ver en cada una, en formato grid</h4>
+<div class="grid-islas">
+    <div id="about-islas">
+        <h4 id="parrafo4">Islas</h4>
+        <ul class="about-listas">
+            <li>Lanzarote</li>
+            <li>La Graciosa</li>
+            <li>Fuerteventura</li>
+            <li>Gran Canaria</li>
+            <li>Tenerife</li>
+            <li>La Gomera</li>
+            <li>La Palma</li>
+            <li>El Hierro</li>
+        </ul>
+    </div>
+    <div id="about-que-ver">
+        <h4 id="parrafo4">Qué ver</h4>
+        <ul class="about-listas">
+            <li>Timanfaya</li>
+            <li>Playa Blanca</li>
+            <li>Jandía</li>
+            <li>Roque Nublo</li>
+            <li>El Teide</li>
+            <li>Garajonay</li>
+            <li>Fuencaliente</li>
+            <li>La Restinga</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

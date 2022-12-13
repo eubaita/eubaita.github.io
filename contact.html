@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Tipos de inputs y desplegable para selecionar</h1>
+<div>
+    <div class="iniciar-sesion">
+        <h4 id="parrafo4">Inicia sesión mi niño</h4>
+        <form action=" "></form>
+        <input type="text" placeholder="Email"> <br>
+        <br>
+        <input type="password" placeholder="Password"> <br>
+        <br>
+        <input type="submit">
+    </div>
+    <h4 id="parrafo4">Ahora utiliza estos inputs tos guapos</h4>
+    <p>Cuánto canario eres:</p>
+    <input type="range"> <br>
+    <p>Marca si te gusta canarias:</p>
+    <input type="checkbox"><br>
+    <p>Elige el día de tu próximo vuelo a canarias:</p>
+    <input type="date"><br>
+    <p>Elige los colores de la bandera canaria:</p>
+    <input type="color"><br>
+    <input type="color"><br>
+    <input type="color"><br>
+    <select>
+        <option>Perro</option>
+        <option>Gato</option>
+        <option>Ratón</option>
+    </select>
+</div>
+{% endblock %}
