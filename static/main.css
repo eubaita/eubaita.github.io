@@ -1,1 +1,126 @@
+body {
+    background: #5d7aa7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e6e6e6, #79a1dd);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #60d7fc, #e7ee85);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h4, h6 {
+    font-family: 'Roboto Mono', monospace
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.iniciar-sesion {
+    text-align: center;
+}
+p {
+    color: rgb(235, 123, 123);
+}
+
+#parrafo4 {
+    color: rgb(35, 59, 35);
+}
+
+.listas {
+    color:rgb(64, 37, 66);
+}
+
+.table {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+}
+@media (max-width: 600px) {
+    .table {
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+
+.grid-islas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#about-islas, #about-que-ver{
+    text-align: center;
+}
+
+.about-listas{
+    list-style: none;
+    font-style: Roboto Mono;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .grid.islas {
+        grid-template-columns: 100%;
+    }
+}
+
+.projects-heading{
+    text-align: center;
+}
+.projects.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.projects-image{
+    justify-self: center;
+    padding: 4%;
+}
+
+
+.project-image-wrapper{
+    justify-self: center;
+    padding: 4%;
+    position: relative;
+}
+
+.big-picture{
+    border-radius: 5%;
+    box-shadow: 0 4px 6px 0 rgb(181, 110, 187);
+    transition: all ease-in-out .2s;
+}
+
+.big-picture:hover {
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px rgb(80, 9, 9);
+}
+
+.project-image-wrapper:hover > h1 {
+    visibility: visible;
+}
+
+.project-image-wrapper > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(111, 202, 103);
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out .2s;
+}
+
+form input, textarea{
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+form input[type="submit"]
+/*
+Formas de selecionar a qué aplicar estilos:
+Por elemento, mencionandolo directamente: h1, h2, p, etc.
+Por class, poniento . y nombre de la clase.
+Por id, poniendo # y nombre del id
 
